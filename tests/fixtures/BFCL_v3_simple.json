@@ -1,0 +1,4 @@
+{"id": "simple_0", "question": [[{"role": "user", "content": "get the current weather in Paris"}]], "function": [{"name": "get_weather", "description": "weather", "parameters": {}}]}
+{"id": "simple_1", "question": [[{"role": "user", "content": "what is the weather in Paris right now"}]], "function": [{"name": "get_weather", "description": "weather", "parameters": {}}]}
+{"id": "simple_2", "question": [[{"role": "user", "content": "process a payment of 50 dollars"}]], "function": [{"name": "process_payment", "description": "pay", "parameters": {}}]}
+{"id": "simple_3", "question": [[{"role": "user", "content": "charge the customer 50 usd"}]], "function": [{"name": "process_payment", "description": "pay", "parameters": {}}]}

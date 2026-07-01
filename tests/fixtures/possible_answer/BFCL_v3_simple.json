@@ -1,0 +1,4 @@
+{"id": "simple_0", "ground_truth": [{"get_weather": {"city": ["Paris"]}}]}
+{"id": "simple_1", "ground_truth": [{"get_weather": {"city": ["Paris"]}}]}
+{"id": "simple_2", "ground_truth": [{"process_payment": {"amount": [50]}}]}
+{"id": "simple_3", "ground_truth": [{"process_payment": {"amount": [50]}}]}

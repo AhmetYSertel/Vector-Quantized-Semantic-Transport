@@ -1,0 +1,123 @@
+{
+  "dataset": "banking77",
+  "n_train": 4575,
+  "n_test": 2310,
+  "n_intents": 77,
+  "K": 256,
+  "exp1_fidelity": {
+    "mean_cosine": 0.8348,
+    "median_cosine": 0.8511,
+    "p5": 0.659,
+    "p95": 0.9508,
+    "high_conf_rate_0.9": 0.2667
+  },
+  "exp2_bandwidth": {
+    "mean_nl_bytes": 54.3,
+    "vq_frame_bytes": 37,
+    "byte_compression_ratio": 1.47,
+    "embedding_bits": 12288,
+    "code_bits": 8,
+    "representational_compression": 1536.0
+  },
+  "exp3_coverage": {
+    "active_codes": 256,
+    "utilization": 1.0,
+    "dead_codes": 0,
+    "gini": 0.2844,
+    "mean_qerr": 0.5197
+  },
+  "exp4_throughput": {
+    "note": "CPU/ONNX (fastembed); GPU numbers will differ",
+    "vq_batch_encode_msg_per_s": 348790,
+    "vq_single_encode_msg_per_s": 15205,
+    "decode_msg_per_s": 7999468,
+    "full_pipeline_incl_embed_msg_per_s": 23
+  },
+  "exp5_routing": {
+    "n_test": 2310,
+    "n_intents": 77,
+    "labeled_centroids": 256,
+    "train_cell_purity": 0.8223,
+    "code_routing_accuracy": 0.8156,
+    "warm_cache_hit_rate": 1.0,
+    "served_correctness": 0.8156,
+    "streaming_dedup_hit_rate": 0.8913,
+    "streaming_hit_coherence": 0.745,
+    "collision_rate": 0.1844
+  },
+  "exp5b_ceiling": {
+    "full_precision_1nn_accuracy": 0.8978
+  },
+  "exp6_k_scaling": [
+    {
+      "K": 8,
+      "routing_acc": 0.1009,
+      "streaming_dedup": 0.9965,
+      "hit_coherence": 0.0743,
+      "collision": 0.8991,
+      "mean_cosine": 0.6321,
+      "utilization": 1.0
+    },
+    {
+      "K": 16,
+      "routing_acc": 0.1939,
+      "streaming_dedup": 0.9931,
+      "hit_coherence": 0.1469,
+      "collision": 0.8061,
+      "mean_cosine": 0.6782,
+      "utilization": 1.0
+    },
+    {
+      "K": 32,
+      "routing_acc": 0.3615,
+      "streaming_dedup": 0.9861,
+      "hit_coherence": 0.288,
+      "collision": 0.6385,
+      "mean_cosine": 0.7268,
+      "utilization": 1.0
+    },
+    {
+      "K": 64,
+      "routing_acc": 0.6048,
+      "streaming_dedup": 0.9723,
+      "hit_coherence": 0.5129,
+      "collision": 0.3952,
+      "mean_cosine": 0.7718,
+      "utilization": 1.0
+    },
+    {
+      "K": 128,
+      "routing_acc": 0.7247,
+      "streaming_dedup": 0.945,
+      "hit_coherence": 0.6212,
+      "collision": 0.2753,
+      "mean_cosine": 0.807,
+      "utilization": 1.0
+    },
+    {
+      "K": 256,
+      "routing_acc": 0.8156,
+      "streaming_dedup": 0.8913,
+      "hit_coherence": 0.745,
+      "collision": 0.1844,
+      "mean_cosine": 0.8348,
+      "utilization": 1.0
+    },
+    {
+      "K": 512,
+      "routing_acc": 0.8576,
+      "streaming_dedup": 0.8035,
+      "hit_coherence": 0.8173,
+      "collision": 0.1424,
+      "mean_cosine": 0.854,
+      "utilization": 1.0
+    }
+  ],
+  "exp7_mismatch": {
+    "matched_fidelity": 0.8348,
+    "mismatched_fidelity": 0.2304,
+    "matched_routing_acc": 0.8156,
+    "mismatched_routing_acc": 0.0165,
+    "versioned_recovery_acc": 0.8156
+  }
+}

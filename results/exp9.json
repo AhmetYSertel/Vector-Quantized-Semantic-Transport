@@ -1,0 +1,24 @@
+{
+  "n_examples": 600,
+  "categories": [
+    "simple",
+    "multiple"
+  ],
+  "baseline": {
+    "mode": "baseline",
+    "n": 600,
+    "function_name_accuracy": 0.93,
+    "full_call_accuracy": 0.0867,
+    "cache_serve_rate": 0.0,
+    "collision_rate": 0.0
+  },
+  "vqt": {
+    "mode": "VQT",
+    "n": 600,
+    "function_name_accuracy": 0.5217,
+    "full_call_accuracy": 0.0367,
+    "cache_serve_rate": 0.5733,
+    "collision_rate": 0.4283,
+    "unique_codes_used": 256
+  }
+}

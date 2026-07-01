@@ -1,0 +1,23 @@
+# VQT default configuration
+encoder:
+  model: sentence-transformers/all-MiniLM-L6-v2
+  dim: 384
+
+codebook:
+  K: 256
+  seed: 42
+  version: 1
+
+data:
+  bfcl_dir: data/bfcl
+  categories: [simple, multiple]
+
+llm:
+  backend: openai          # openai | stub
+  model: gpt-4o-mini
+  # for local servers (vLLM/Ollama/TGI) set OPENAI_BASE_URL to the endpoint
+
+paths:
+  codebook: artifacts/codebook.npz
+  dictionary: artifacts/dictionary.json
+  results: results/exp9.json

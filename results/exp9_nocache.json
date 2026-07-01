@@ -1,0 +1,16 @@
+{
+  "n_examples": 600,
+  "categories": [
+    "simple",
+    "multiple"
+  ],
+  "vqt_nocache": {
+    "mode": "VQT",
+    "n": 600,
+    "function_name_accuracy": 0.9117,
+    "full_call_accuracy": 0.0617,
+    "cache_serve_rate": 0.0,
+    "collision_rate": 0.4283,
+    "unique_codes_used": 256
+  }
+}
