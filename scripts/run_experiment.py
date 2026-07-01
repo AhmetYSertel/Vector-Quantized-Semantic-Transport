@@ -35,7 +35,9 @@ def main():
     ap.add_argument("--dictionary", required=True)
     ap.add_argument("--categories", nargs="+", default=list(bfcl.CATEGORIES))
     ap.add_argument("--backend", default="openai", choices=["openai", "stub"])
-    ap.add_argument("--model", default="gpt-4o-mini")
+    # pinned snapshot for reproducibility; live-LLM output is still not
+    # bit-reproducible across snapshots (see REPRODUCE.md)
+    ap.add_argument("--model", default="gpt-4o-mini-2024-07-18")
     ap.add_argument("--model-encoder", default="sentence-transformers/all-MiniLM-L6-v2")
     ap.add_argument("--out", required=True)
     args = ap.parse_args()

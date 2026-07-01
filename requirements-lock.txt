@@ -1,0 +1,16 @@
+# Exact environment that produced the committed results/ and artifacts/.
+# Python 3.12.10 (Windows 11).  Install with:
+#     pip install -r requirements-lock.txt
+#
+# Note: the intent-path numbers (results/clinc150.json, results/banking77.json)
+# are deterministic given these versions (fixed KMeans seed=42, fixed stratified
+# subset seed=0). The live-LLM exp9 numbers (results/exp9*.json) are NOT
+# bit-reproducible — they depend on the OpenAI model snapshot at run time; see
+# REPRODUCE.md.
+numpy==2.4.3
+scikit-learn==1.8.0
+sentence-transformers==5.3.0
+fastembed==0.8.0
+openai==2.44.0
+pyyaml==6.0.3
+pytest==9.0.2

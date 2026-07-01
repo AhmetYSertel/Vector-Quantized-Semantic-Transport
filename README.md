@@ -24,11 +24,13 @@ Receiver: code --cache?--> HIT : cached call         (LLM skipped)
 ## Install
 
 ```bash
-pip install -e ".[encoder,llm,dev]"     # or: pip install -r requirements.txt
+pip install -e ".[encoder,fastencoder,llm,dev]"   # or: pip install -r requirements.txt
 ```
 
-`sentence-transformers` is only needed for the real encoder; the test suite runs
-offline with a deterministic `FakeEncoder`.
+`sentence-transformers` (torch) drives the exp9 `RealEncoder`; `fastembed` (ONNX)
+drives the intent-path `FastEmbedEncoder`; the test suite runs offline with a
+deterministic `FakeEncoder`. For an exact-reproduction environment and the
+determinism guarantees of each result, see [`REPRODUCE.md`](REPRODUCE.md).
 
 ## Pipeline
 
